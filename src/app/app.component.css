@@ -1,0 +1,113 @@
+html, body{
+  height: 100%;
+  background: #ff1100;
+  font-family: 'Fira Code' !important;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin:0;
+}
+nav {
+  align-items: flex-end;
+}
+div.front {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+md-toolbar.md-primary {
+  background: #000 !important;
+}
+md-toolbar md-toolbar-row {
+  align-items: center;
+  justify-content: space-between;
+  background: #000 !important;
+  height:100px !important
+}
+md-toolbar a.logo {
+  font-size:1rem;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace !important;
+  padding: 25px;
+  color: black;
+  background: #fff;
+}
+md-toolbar md-toolbar-row>[md-raised-button], [md-fab], [md-mini-fab], [md-button], [md-icon-button] {
+  padding: 5px 2rem !important;
+  font-family: 'Fira Code' !important;
+  text-transform: uppercase;
+}
+md-toolbar .outside a {
+  background:#fff;
+  padding: 3px;
+}
+md-toolbar .outside {
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index:1000;
+}
+md-toolbar .outside a {
+  cursor:pointer;
+  background: rgb(255, 255, 255);
+  padding: 3px 8px;
+  display: block;
+  margin: 5px 0px;
+  transition: 0.4s ease;
+}
+md-toolbar .outside a:hover {
+  background: red;
+
+}
+button.active{
+  background: #fff;
+  color: #009688;
+}
+button.active:hover{
+  color: #fff;
+}
+footer.current {
+  text-align: center;
+  position:fixed;
+  bottom:0;
+  width: 100%;
+}
+footer.current h3 span {
+  text-decoration: underline;
+  color:#fff;
+  background:#000;
+}
+
+.app-state{
+  margin: 15px;
+  flex: 1;
+}
+.home{
+  flex: 1;
+}
+
+
+/** remove when fixed in angular2-material **/
+/** The overlay-container is an invisible element which contains all individual overlays. */
+.md-overlay-container {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+/** A single overlay pane. */
+.md-overlay-pane {
+  position: absolute;
+  pointer-events: auto;
+  box-sizing: border-box;
+  z-index: 1000;
+}

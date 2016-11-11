@@ -1,0 +1,34 @@
+/*styles for home content only*/
+h1.myName, h2.myTitle {
+  text-align: center;
+  margin: 0;
+}
+h1.myName {
+  font-size: 5rem;
+    padding: 1rem;
+    padding -bottom: 5rem;
+    background: #ffffff;
+    color: #ff0057;
+    mix-blend-mode: saturation;
+}
+h1.myName span {
+  text-transform: inherit;;
+  font-size: 2rem;
+}
+h2.myTitle {
+  font-size:1.2rem;
+  color:#fff;
+}
+div.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  mix-blend-mode: screen;
+  opacity: 1;
+  margin-top: 30px;
+}
+div.tools img {
+  padding:0 20px;
+}
